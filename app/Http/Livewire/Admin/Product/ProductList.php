@@ -601,8 +601,7 @@ class ProductList extends Component
 
     public function returnOrder($id)
     {
-        $this->showModal('error', 'Error', 'Work in progress');
-         return false;
+        
         $this->returnOrder = ProductOrder::with('customer')->find($id);
         $this->return_order_id = $this->returnOrder->id;
         $this->product_name = $this->returnOrder->product_name;
@@ -809,9 +808,7 @@ class ProductList extends Component
 
     public function addToCart($id, $key)
     {
-        //dd('okk');
-        $this->showModal('error', 'Error', 'Work in progress');
-         return false;
+        
         $changeProduct = Product::withSum('productQuantities', 'quantity')->withSum('productOrders', 'qty')->withSum('returnProductsQuantity', 'qty')->find($id);
 
         $changeProductQuantity = $changeProduct->quantity;

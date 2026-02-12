@@ -22,7 +22,7 @@
             </li>
 
 
-            {{-- <li class="side-nav-item {{ Route::is('sub_admin_orders.view') ? 'menuitem-active' : '' }}">
+            <li class="side-nav-item {{ Route::is('sub_admin_orders.view') ? 'menuitem-active' : '' }}">
                 <a data-bs-toggle="collapse" href="#sba5" aria-expanded="false" aria-controls="sba5"
                     class="side-nav-link">
                     <i class="mdi mdi-order-alphabetical-ascending"></i>
@@ -38,7 +38,7 @@
                                 class="{{ Route::is('sub_admin_orders.view') ? 'active' : '' }}">Sub Admin Orders</a></li>
                     </ul>
                 </div>
-            </li> --}}
+            </li>
 
             <li
                 class="side-nav-item {{ Route::is('add_to_cart') ? 'menuitem-active' : '' }} {{ Route::is('product.order') ? 'menuitem-active' : '' }}">
